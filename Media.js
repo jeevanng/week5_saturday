@@ -3,8 +3,8 @@
 
 // Blueprint of data
 class Media {
-    constructor(){
-        this.name = "Default generic media"
+    constructor(someNewName){
+        this.name = someNewName;
 
         Media.count++;
     }
@@ -27,20 +27,25 @@ class Media {
     }
 }
 
+
 // Instance of blueprint
-let someMedia = new Media();
-let someMoreMedia = new Media();
-// Get name of the instance, which will be the default
-console.log(someMedia.name);
-// Using the function/method in the class 
-console.log(someMedia.getMediaName());
+// let someMedia = new Media();
+// let someMoreMedia = new Media();
+// // Get name of the instance, which will be the default
+// console.log(someMedia.name);
+// // Using the function/method in the class 
+// console.log(someMedia.getMediaName());
 
-// Change name of the instance
-someMedia.name = "Cool generic media"
-console.log(someMedia.name);
-// Using the function/method in the class 
-console.log(someMedia.getMediaName());
+// // Change name of the instance
+// someMedia.name = "Cool generic media"
+// console.log(someMedia.name);
+// // Using the function/method in the class 
+// console.log(someMedia.getMediaName());
 
-console.log(Media.version());
-console.log(Media.prototype.version());
-console.log(`We have ${Media.count} items`);
+// console.log(Media.version());
+// console.log(Media.prototype.version());
+// console.log(`We have ${Media.count} items`);
+
+module.exports = {
+    Media
+}
