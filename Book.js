@@ -15,3 +15,8 @@ class Book extends Media {
 
 let someBook = new Book("Shopify Tutorial");
 console.log(someBook.name);
+
+
+module.exports = {
+    Book
+}
